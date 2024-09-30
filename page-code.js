@@ -17,4 +17,48 @@ function getHumanChoice(){
     return textHuman;
 }
 
+let humanScore = 0;
+let computerScore = 0;
 
+function playRound(humanChoice, computerChoice){
+    humanChoice = humanChoice.toLowerCase();
+    
+    if (humanChoice == computerChoice){
+        return "Draw";
+    }
+
+    else if (humanChoice == "rock" && computerChoice == "scissors"){
+        humanScore += 1;
+        return "Human victory!";
+    }
+
+    else if (humanChoice == "paper" && computerChoice == "rock"){
+        humanScore += 1;
+        return "Human victory!";
+    }
+
+    else if (humanChoice == "scissors" && computerChoice == "paper"){
+        humanScore += 1;
+        return "Human victory!";
+    }
+
+    else{
+        computerScore += 1;
+        return "Computer victory!";
+    }
+}
+
+function playGame(){
+    for (let i=0;i<5;i++){
+        let humanSelection = getHumanChoice();
+        let computerSelection = getComputerChoice();
+        console.log(playRound(humanSelection, computerSelection, "\n"));
+        
+    }
+
+    if (humanScore > computerScore){
+        console.log("HUMAN WINS!")
+    } else console.log("COMPUTER WINS!")
+}
+
+playGame();
