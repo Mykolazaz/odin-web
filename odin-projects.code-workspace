@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../odin-java-1/odin-calculator"
+		},
+		{
+			"path": "../odin-java-1/odin-etch-a-sketch"
+		},
+		{
+			"path": "../odin-java-1/odin-landing-page"
+		},
+		{
+			"path": "../odin-java-1/odin-recipes"
+		},
+		{
+			"path": "../odin-java-1/odin-rock-paper-scissors"
+		}
+	]
+}
