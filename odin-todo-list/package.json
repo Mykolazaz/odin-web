@@ -1,0 +1,27 @@
+{
+  "name": "theodinproject-todolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salvillalon45/theOdinProject-TodoList.git"
+  },
+  "author": "Salvador Villalon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salvillalon45/theOdinProject-TodoList/issues"
+  },
+  "homepage": "https://github.com/salvillalon45/theOdinProject-TodoList#readme",
+  "devDependencies": {
+    "date-fns": "^2.14.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+  
+}

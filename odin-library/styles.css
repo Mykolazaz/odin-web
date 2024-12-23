@@ -1,0 +1,136 @@
+body{
+    font-family: helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.board {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-card {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-card h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.book-info {
+    margin: 5px 0;
+    color: #666;
+}
+
+.read-status {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.read {
+    font-weight: 600;
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.unread {
+    background-color: #ffcdd2;
+    color: #c62828;
+}
+
+#addBookBtn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addBookBtn:hover {
+    background-color: #45a049;
+}
+
+#bookDialog {
+    padding: 40px;
+    padding-right: 60px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#bookDialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.button-group button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-group button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button-group button[type="button"] {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete{
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #ffcdd2;
+    color: #c62828;
+    cursor: pointer;
+}

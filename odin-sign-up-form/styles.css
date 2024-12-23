@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: helvetica, sans-serif;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    background: #ededed;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.left-frame {
+    min-height: 100vh;
+    width: 66.6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left-frame img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.big-text {
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 16%;
+    padding-bottom: 50px;
+    padding-right: 200px;
+    padding-left: 30px;
+    white-space: pre-line;
+}
+
+.big-text em {
+    font-style: italic;
+}
+
+.small-text {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 30px;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form {
+    padding-left: 30px;
+    background: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-text {
+    padding-top: 10px;
+    font-size: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-acc {
+    font-size: 12px;
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+    color: white;
+    background-color: #596D48;
+    border: 2px solid #596D48;
+    padding: 10px 20px;
+    margin: 20px 0 20px 30px;
+    border-radius: 5px;
+    
+}
+
+.lets-form{
+    box-shadow: 0 4px 2px 1px lightgray;
+}
+
+.full-form {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    padding-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form1, .form2 {
+    margin-left: 30px;
+}
+
+.bottom-text {
+    font-size: 14px;
+    padding-left: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bottom-text b {
+    color: #596D48;
+    font-weight: 600;
+
+}
+
+.card-container {
+    position: relative;
+    width: 100%
+}
+
+.card-body {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.card-body img {
+    height: 4rem;
+    width: auto;
+    margin-right: 1rem;
+}
+
+.card-paragraph {
+    font-size: 4rem;
+    font-family: roboto;
+}
+
+.password-error {
+    color: #D55C5F;
+    font-size: 12px;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.invalid-input {
+    border: 1px solid #D55C5F;
+}

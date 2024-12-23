@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Weather App</title>
+    <meta name="description" content="Description of the page for search engines">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="main">
+
+        <!------------------------- Searchbar Section ------------------------>
+        <div class="search-container">
+            <form id="searchForm">
+                <input type="text" id="searchQuery" placeholder="Enter city or zip code">
+                <button id="searchButton" type="submit">Search</button>
+            </form>
+        </div>
+
+        <!------------------------- Current Weather Section ------------------------>
+        <div class="current-weather">
+            <h1 class="current-weather__city" id="currentWeatherCity">Chicago</h1>
+            <h2 class="current-weather__degrees" id="currentWeatherDegrees">63°</h2>
+            <div class="current-weather__condition-container">
+                <h3 class="current-weather__condition" id="currentWeatherCondition">Mostly Cloudy</h3>
+                <i class="weekly-forecast__icon" id="currentWeatherIcon"></i>
+            </div>
+
+            <div class="current-weather__stats">
+                <div class="current-weather__stats-item" id="currentWeatherRainProbability">
+                    0% Probability of Rain
+                </div>
+                <div class="current-weather__stats-item" id="currentWeatherLowHigh">
+                    20° Low / 70° High
+                </div>
+                <div class="current-weather__stats-item" id="currentWeatherUV">
+                    Moderate UV Levels
+                </div>
+            </div>
+        </div>
+
+        <hr class="separator">
+
+        <!------------------------- Hourly Section ------------------------>
+
+        <div class="hourly-forecast">
+            <div class="hourly-forecast__timeline">
+                <div class="hourly-forecast__item">
+                    <div class="hourly-forecast__time">Time</div>
+                    <div class="hourly-forecast__condition">Weather Condition</div>
+                    <div class="hourly-forecast__degrees">Degrees</div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="separator">
+
+        <!------------------------- Weekly Section ------------------------>
+
+        <div class="weekly-forecast">
+            <div class="weekly-forecast__container">
+                <div class="weekly-forecast__item" id="forecastDay1">
+                    <div class="weekly-forecast__weekday">Day1</div>
+                    <div class="weekly-forecast__condition-wrapper">
+                        <div class="weekly-forecast__condition">Weather Condition</div>
+                        <i class="weekly-forecast__icon"></i>
+                    </div>
+                    <div class="weekly-forecast__degrees">Low/High Degrees</div>
+                </div>
+
+                <div class="weekly-forecast__item" id="forecastDay2">
+                    <div class="weekly-forecast__weekday">Day2</div>
+                    <div class="weekly-forecast__condition-wrapper">
+                        <div class="weekly-forecast__condition">Weather Condition</div>
+                        <i class="weekly-forecast__icon"></i>
+                    </div>
+                    <div class="weekly-forecast__degrees">Low/High Degrees</div>
+                </div>
+
+                <div class="weekly-forecast__item" id="forecastDay3">
+                    <div class="weekly-forecast__weekday">Day3</div>
+                    <div class="weekly-forecast__condition-wrapper">
+                        <div class="weekly-forecast__condition">Weather Condition</div>
+                        <i class="weekly-forecast__icon"></i>
+                    </div>
+                    <div class="weekly-forecast__degrees">Low/High Degrees</div>
+                </div>
+
+                <div class="weekly-forecast__item" id="forecastDay4">
+                    <div class="weekly-forecast__weekday">Day4</div>
+                    <div class="weekly-forecast__condition-wrapper">
+                        <div class="weekly-forecast__condition">Weather Condition</div>
+                        <i class="weekly-forecast__icon"></i>
+                    </div>
+                    <div class="weekly-forecast__degrees">Low/High Degrees</div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr class="separator">
+
+        <!------------------------- Humidity Section ------------------------>
+
+        <div class="humidity">
+            <div class="humidity__container">
+                <div class="humidity__item">
+                    <div class="humidity__label">Humidity</div>
+                    <div class="humidity__value" id="humidity">41%</div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="separator">
+
+  <!------------------------- Day Time Section ------------------------>
+
+        <!-- <section class="day-time">
+            <div class="day-time__local-time">Day Time Local Time</div>
+            <div class="day-time__sunrise-sunset">
+                
+                sun rise to sunset arch graph 
+            </div>
+        </section> -->
+
+        <!-- <hr class="separator" /> -->
+
+    </main>
+
+    <!------------------------- Footer Section ------------------------>
+
+    <footer class="footer">
+        <p class="footer__copyright"></p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
